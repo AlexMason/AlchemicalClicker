@@ -12,6 +12,20 @@ function combineElements() {
 	}
 }
 
+function selectElement(name) {
+	var element = getElementByName(name);
+	element.setSelected(!element.isSelected());
+	updateUI();
+}
+
+function unselectAll() {
+	var selectedElements = getSelectedElements();
+	for (var i = 0; i < selectedElements.length; i++) {
+		selectedElements[i].setSelected(false);
+	}
+	updateUI();
+}
+
 function getSelectedElements() {
 	if (elements.length < 1) {
 		return (undefined);

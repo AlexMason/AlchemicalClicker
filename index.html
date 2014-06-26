@@ -17,8 +17,11 @@
 		</script>
 	</head>
 	<body>
-		<div class="header"><center><h1>Alchemical Clicker</h1></center></div>
+		
+		<div class="errorMessage"></div>
 		<div class="content">
+			<div class="header"><center><h1>Alchemical Clicker</h1></center></div>
+			<div class="energyBox ui-corner-all" id="energy"></div>
 			<div id="tabs">
 				<ul>
 					<li><a href="#elementsTab">Elements</a></li>
@@ -26,17 +29,18 @@
 					<li><a href="#landTab">Land</a></li>
 				</ul>
 				<div id="elementsTab">
+					<div class="elementsBar"><div align="right"><a href="#" class="unselect-button" onmousedown="unselectAll()">Unselect All</a></div></div>
 					<div id="elements"></div>
 				</div>
 				<div id="alchemistsTab">
-					Test Alchemists
+					This feature is coming soon.
 				</div>
 				<div id="landTab">
-					Test Lands
+					This feature is coming soon.
 				</div>
 			</div>
+			<div class="footer">Footer Content</div>
 		</div>
-		<div class="footer">Footer Content</div>
 		<script src="./js/game.js"></script>
 	</body>
 </html>
