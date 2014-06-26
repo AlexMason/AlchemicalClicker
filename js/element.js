@@ -33,13 +33,16 @@ var Element = (function() {
     	this._amount = amount;
     }
     Element.prototype.setUnlocked = function(unlocked) {
-    	this._unlocked = unlocked;
+        this._unlocked = unlocked;
+    }
+    Element.prototype.setSelected = function(selected) {
+        this._selected = selected;
+    }
+    Element.prototype.isUnlocked = function() {
+        return this._unlocked;
     }
     Element.prototype.isSelected = function() {
-        return selected;
-    }
-    Element.prototype.toggleSelected = function() {
-        return !selected;
+        return this._selected;
     }
 
     return Element;

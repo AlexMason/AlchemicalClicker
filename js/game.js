@@ -6,7 +6,9 @@ function init() {
 	registerElement("Fire", ["Basic"], true, 1);
 	registerElement("Water", ["Basic"], true, 1);
 
-	listElements();
+	//listElements();
+
+	updateUI();
 }
 
 function loop() {

@@ -18,9 +18,28 @@ function getSelectedElements() {
 	}
 	var selectedElements = [];
 	for (var i = 0; i < elements.length; i++) {
-		if (name.toLowerCase() == elements[i].getName().toLowerCase()) {
+		if (elements[i].isSelected()) {
 			selectedElements.push(elements[i]);
 		}
+	}
+	if (selectedElements.length > 0) {
+		return selectedElements;
+	}
+	return undefined;
+}
+
+function getUnlockedElements() {
+	if (elements.length < 1) {
+		return (undefined);
+	}
+	var unlockedElements = [];
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].isUnlocked()) {
+			unlockedElements.push(elements[i]);
+		}
+	}
+	if (unlockedElements.length > 0) {
+		return unlockedElements;
 	}
 	return undefined;
 }
