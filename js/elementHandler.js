@@ -17,7 +17,7 @@ function getSelectedElements() {
 		return (undefined);
 	}
 	var selectedElements = [];
-	var (var i = 0; i < elements.length; i++) {
+	for (var i = 0; i < elements.length; i++) {
 		if (name.toLowerCase() == elements[i].getName().toLowerCase()) {
 			selectedElements.push(elements[i]);
 		}
@@ -49,7 +49,7 @@ function getElementIDByName(name) {
 	if (elements.length < 1) {
 		return (-1);
 	}
-	var (var i = 0; i < elements.length; i++) {
+	for (var i = 0; i < elements.length; i++) {
 		if (name.toLowerCase() == elements[i].getName().toLowerCase()) {
 			return i;
 		}
@@ -61,7 +61,7 @@ function getElementByName(name) {
 	if (elements.length < 1) {
 		return (undefined);
 	}
-	var (var i = 0; i < elements.length; i++) {
+	for (var i = 0; i < elements.length; i++) {
 		if (name.toLowerCase() == elements[i].getName().toLowerCase()) {
 			return elements[i];
 		}
