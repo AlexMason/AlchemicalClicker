@@ -51,8 +51,18 @@ body {
 	max-height: 80%;
 }
 
+.elements-container {
+	height:70%;
+	display:block;
+}
+
+.elementsBar {
+	display: block;
+}
+
 #elements {
-	max-height: 70%;
+	height: 100%;
+	display: block;
 	overflow: auto;
 }
 
@@ -65,9 +75,6 @@ body {
 	font-size: 11pt;
 }
 
-#elementsTab {
-	overflow-y:auto;
-}
 .energyBox {
 	border: 1px solid #aaaaaa;
 	border-radius: 2px;
@@ -75,6 +82,8 @@ body {
 	height: 40px;
 	margin-bottom: 2px;
 }
+
+
 .select-button {
 	-moz-box-shadow:inset 0px -1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px -1px 0px 0px #ffffff;
